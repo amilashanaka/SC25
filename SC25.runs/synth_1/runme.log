@@ -8,12 +8,12 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Tue Nov 26 16:38:54 2024
+  **** Start of session at: Wed Nov 27 09:52:14 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source dma_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 690.137 ; gain = 240.871
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 691.965 ; gain = 238.957
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/SC25/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -26,13 +26,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6580
+INFO: [Synth 8-7075] Helper process launched with PID 21648
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1586.273 ; gain = 447.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1585.035 ; gain = 446.234
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'dma_wrapper' [C:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/hdl/dma_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'dma' [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/synth/dma.v:13]
@@ -572,6 +570,7 @@ INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.1/data/ip
 INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
 WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'dma_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/synth/dma.v:578]
 WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'dma_axis_data_fifo_0_0' has 12 connections declared, but only 11 given [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/synth/dma.v:578]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/fbb1/hdl/data_anchor.v:50]
 WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_processing_system7_0_0/synth/dma_processing_system7_0_0.v:599]
 WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_processing_system7_0_0/synth/dma_processing_system7_0_0.v:599]
 WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_processing_system7_0_0/synth/dma_processing_system7_0_0.v:599]
@@ -780,7 +779,8 @@ WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[2].gen_mi_wri
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
 WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
 WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
-WARNING: [Synth 8-6014] Unused sequential element sample_count_reg was removed.  [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/b6a8/hdl/data_anchor.v:49]
+WARNING: [Synth 8-6014] Unused sequential element write_addr_reg was removed.  [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/fbb1/hdl/data_anchor.v:46]
+WARNING: [Synth 8-6014] Unused sequential element active_buffer_reg was removed.  [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/fbb1/hdl/data_anchor.v:38]
 WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/d59d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3596]
 WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/d59d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3597]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:2051]
@@ -889,18 +889,18 @@ WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_33_axi_c
 WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_33_axi_crossbar__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.953 ; gain = 880.156
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2016.723 ; gain = 877.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.953 ; gain = 880.156
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2016.723 ; gain = 877.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.953 ; gain = 880.156
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2016.723 ; gain = 877.922
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.369 . Memory (MB): peak = 2018.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 2016.723 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -948,35 +948,33 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/dma_wrapper_
 INFO: [Project 1-1714] 11 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2114.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2106.367 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 33 instances were transformed.
   FDR => FDRE: 24 instances
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 2114.074 ; gain = 0.000
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 2106.367 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/processing_system7_0/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 55).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/rst_ps7_0_50M/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 58).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_dma/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 64).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst/PmodAD1_pmod_bridge/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 70).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 75).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_mem_intercon/s01_couplers/auto_us/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 80).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/rst_ps7_0_50M/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 60).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_mem_intercon/s01_couplers/auto_us/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 66).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_dma/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 75).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst/PmodAD1_pmod_bridge/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 81).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 86).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
@@ -1013,7 +1011,20 @@ WARNING: set_property KEEP could not find object (constraint file  auto generate
 WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
 WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 2106.367 ; gain = 967.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+got a mismatch dma_data_anchor_0_0
+Is not a child genome
+got a mismatch data_anchor
+Is not a child genome
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 2106.367 ; gain = 967.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad1_spi'
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
@@ -1216,8 +1227,18 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_32_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Port sizes have changed
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1229,7 +1250,7 @@ Detailed RTL Component Info :
 	   2 Input   12 Bit       Adders := 8     
 	   4 Input   11 Bit       Adders := 2     
 	   4 Input   10 Bit       Adders := 3     
-	   2 Input   10 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
 	   2 Input    9 Bit       Adders := 2     
 	   2 Input    8 Bit       Adders := 15    
 	   4 Input    8 Bit       Adders := 8     
@@ -1274,7 +1295,7 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 13    
 	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 8     
+	               10 Bit    Registers := 6     
 	                9 Bit    Registers := 5     
 	                8 Bit    Registers := 52    
 	                7 Bit    Registers := 13    
@@ -1283,10 +1304,10 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 90    
 	                3 Bit    Registers := 51    
 	                2 Bit    Registers := 86    
-	                1 Bit    Registers := 743   
+	                1 Bit    Registers := 741   
 +---RAMs : 
 	              44K Bit	(1024 X 44 bit)          RAMs := 1     
-	              32K Bit	(1024 X 32 bit)          RAMs := 2     
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
 	               9K Bit	(128 X 75 bit)          RAMs := 1     
 	               4K Bit	(128 X 38 bit)          RAMs := 1     
 	              144 Bit	(16 X 9 bit)          RAMs := 1     
@@ -1300,7 +1321,7 @@ Detailed RTL Component Info :
 	   2 Input   37 Bit        Muxes := 2     
 	   2 Input   36 Bit        Muxes := 4     
 	   4 Input   32 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 23    
+	   2 Input   32 Bit        Muxes := 22    
 	   8 Input   32 Bit        Muxes := 4     
 	   2 Input   26 Bit        Muxes := 5     
 	   4 Input   26 Bit        Muxes := 2     
@@ -1314,7 +1335,7 @@ Detailed RTL Component Info :
 	   8 Input   12 Bit        Muxes := 4     
 	   2 Input   12 Bit        Muxes := 6     
 	   2 Input   11 Bit        Muxes := 2     
-	   3 Input   10 Bit        Muxes := 2     
+	   3 Input   10 Bit        Muxes := 1     
 	   2 Input    9 Bit        Muxes := 4     
 	   2 Input    8 Bit        Muxes := 51    
 	   8 Input    8 Bit        Muxes := 7     
@@ -1329,14 +1350,14 @@ Detailed RTL Component Info :
 	   2 Input    3 Bit        Muxes := 38    
 	   6 Input    3 Bit        Muxes := 2     
 	   5 Input    3 Bit        Muxes := 3     
-	   3 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
 	   8 Input    3 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 39    
 	   2 Input    2 Bit        Muxes := 268   
 	   3 Input    2 Bit        Muxes := 6     
 	   5 Input    2 Bit        Muxes := 6     
 	   2 Input    1 Bit        Muxes := 468   
-	   3 Input    1 Bit        Muxes := 38    
+	   3 Input    1 Bit        Muxes := 33    
 	   4 Input    1 Bit        Muxes := 41    
 	   8 Input    1 Bit        Muxes := 3     
 	   7 Input    1 Bit        Muxes := 3     
@@ -1402,7 +1423,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:40 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1417,22 +1438,21 @@ Block RAM: Preliminary Mapping Report (see note below)
 |dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 75(NO_CHANGE)    | W |   | 128 x 75(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      | 
 |dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 |dma_i/axis_data_fifo_0/\inst/gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                                                                                                | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 44(READ_FIRST)   | W |   | 1 K x 44(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|dma_i/data_anchor_0                                                                                                                                                                                                                          | inst/buffer_reg                  | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 Distributed RAM: Preliminary Mapping Report (see note below)
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|Module Name                                                                                                                                                                                                                                    | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives    | 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2    | 
-|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1    | 
-|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1    | 
-|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-|dma_i/data_anchor_0                                                                                                                                                                                                                            | inst/memory_bank_1_reg                                                        | Implied        | 1 K x 32             | RAM64M x 176  | 
-|dma_i/data_anchor_0                                                                                                                                                                                                                            | inst/memory_bank_0_reg                                                        | Implied        | 1 K x 32             | RAM64M x 176  | 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name                                                                                                                                                                                                                                    | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2  | 
+|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1  | 
+|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1  | 
+|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1  | 
+|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1442,7 +1462,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:44 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1450,7 +1470,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:47 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1463,21 +1483,20 @@ Block RAM: Final Mapping Report
 |dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 75(NO_CHANGE)    | W |   | 128 x 75(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      | 
 |dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 |dma_i/axis_data_fifo_0/\inst/gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                                                                                                | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 44(READ_FIRST)   | W |   | 1 K x 44(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|dma_i/data_anchor_0                                                                                                                                                                                                                          | inst/buffer_reg                  | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 
 Distributed RAM: Final Mapping Report
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|Module Name                                                                                                                                                                                                                                    | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives    | 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2    | 
-|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1    | 
-|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1    | 
-|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-|dma_i/data_anchor_0                                                                                                                                                                                                                            | inst/memory_bank_1_reg                                                        | Implied        | 1 K x 32             | RAM64M x 176  | 
-|dma_i/data_anchor_0                                                                                                                                                                                                                            | inst/memory_bank_0_reg                                                        | Implied        | 1 K x 32             | RAM64M x 176  | 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name                                                                                                                                                                                                                                    | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|dma_i/axi_dma/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2  | 
+|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1  | 
+|dma_i/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1  | 
+|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                             | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 6               | RAM32M x 1  | 
+|dma_i/axi_mem_intercon/\m01_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                        | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1485,8 +1504,9 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dma_i/data_anchor_0/inst/buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:49 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1607,37 +1627,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/8142/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6605]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:51 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:51 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1682,56 +1702,53 @@ Report Cell Usage:
 |1     |BIBUF    |   130|
 |2     |BUFG     |     1|
 |3     |CARRY4   |   115|
-|4     |LUT1     |   210|
-|5     |LUT2     |   457|
-|6     |LUT3     |   926|
-|7     |LUT4     |   619|
-|8     |LUT5     |   663|
-|9     |LUT6     |  1082|
-|10    |MUXF7    |   128|
-|11    |PS7      |     1|
-|12    |RAM32M   |     6|
-|13    |RAM64M   |   352|
-|14    |RAMB18E1 |     2|
-|16    |RAMB36E1 |     2|
-|18    |SRL16    |     1|
-|19    |SRL16E   |   185|
-|20    |SRLC32E  |    76|
-|21    |FDCE     |   170|
-|22    |FDPE     |    66|
-|23    |FDR      |    12|
-|24    |FDRE     |  3527|
-|25    |FDSE     |   154|
-|26    |IOBUF    |     8|
+|4     |LUT1     |   211|
+|5     |LUT2     |   443|
+|6     |LUT3     |   913|
+|7     |LUT4     |   613|
+|8     |LUT5     |   621|
+|9     |LUT6     |   780|
+|10    |PS7      |     1|
+|11    |RAM32M   |     6|
+|12    |RAMB18E1 |     2|
+|14    |RAMB36E1 |     3|
+|17    |SRL16    |     1|
+|18    |SRL16E   |   185|
+|19    |SRLC32E  |    76|
+|20    |FDCE     |   170|
+|21    |FDPE     |    66|
+|22    |FDR      |    12|
+|23    |FDRE     |  3450|
+|24    |FDSE     |   153|
+|25    |IOBUF    |     8|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5125 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:47 . Memory (MB): peak = 2114.074 ; gain = 880.156
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:52 . Memory (MB): peak = 2114.074 ; gain = 975.277
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:47 . Memory (MB): peak = 2106.367 ; gain = 877.922
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 2114.074 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 626 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 2106.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2114.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2106.367 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 379 instances were transformed.
+  A total of 27 instances were transformed.
   FDR => FDRE: 12 instances
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 352 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: e9bafffe
+Synth Design complete | Checksum: 1d0bcaa4
 INFO: [Common 17-83] Releasing license: Synthesis
-555 Infos, 424 Warnings, 2 Critical Warnings and 0 Errors encountered.
+554 Infos, 425 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:57 . Memory (MB): peak = 2114.074 ; gain = 1372.863
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:57 . Memory (MB): peak = 2106.367 ; gain = 1361.391
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2114.074 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2106.367 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dma_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_wrapper_utilization_synth.rpt -pb dma_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 16:40:13 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 09:53:32 2024...

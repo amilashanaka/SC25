@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
@@ -79,19 +78,19 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib C:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/hdl/dma_wrapper.v
 add_files C:/Projects/ERN24004/Projects/SC25/SC25.srcs/sources_1/bd/dma/dma.bd
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_rst_ps7_0_50M_0/dma_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_rst_ps7_0_50M_0/dma_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1/dma_axi_dma_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1/dma_axi_dma_0_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/pmod_bridge_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/src/pmod_concat_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/dma_PmodAD1_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1/dma_axi_dma_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1/dma_axi_dma_0_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/pmod_bridge_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/dma_PmodAD1_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/dma_ooc.xdc]
 
 OPTRACE "Adding files" END { }

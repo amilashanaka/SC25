@@ -297,7 +297,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:15416fa5</spirit:value>
+            <spirit:value>9:2d9cbe31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -313,11 +313,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 26 16:38:32 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 27 09:52:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7f70c573</spirit:value>
+            <spirit:value>9:d853acc6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -333,11 +333,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 26 16:38:32 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 27 09:52:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7f70c573</spirit:value>
+            <spirit:value>9:d853acc6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -353,11 +353,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 26 16:38:32 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 27 09:52:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:15416fa5</spirit:value>
+            <spirit:value>9:2d9cbe31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -373,11 +373,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 26 16:38:32 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 27 09:52:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:15416fa5</spirit:value>
+            <spirit:value>9:2d9cbe31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -521,12 +521,6 @@
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXIS_TDATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
-        <spirit:name>C_M_AXIS_START_COUNT</spirit:name>
-        <spirit:displayName>C M AXIS START COUNT</spirit:displayName>
-        <spirit:description>Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.</spirit:description>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXIS_START_COUNT" spirit:order="4" spirit:minimum="1" spirit:rangeType="long">32</spirit:value>
-      </spirit:modelParameter>
-      <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>DATA_WIDTH</spirit:name>
         <spirit:displayName>Data Width</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DATA_WIDTH">32</spirit:value>
@@ -540,6 +534,16 @@
         <spirit:name>ADC_MAX_COUNT</spirit:name>
         <spirit:displayName>Adc Max Count</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ADC_MAX_COUNT">50</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BASE_ADDR</spirit:name>
+        <spirit:displayName>Base Addr</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BASE_ADDR" spirit:bitStringLength="32">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BUFFER_SIZE</spirit:name>
+        <spirit:displayName>Buffer Size</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BUFFER_SIZE">1024</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -558,7 +562,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/b6a8/hdl/data_anchor.v</spirit:name>
+        <spirit:name>../../ipshared/fbb1/hdl/data_anchor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -573,7 +577,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/b6a8/hdl/data_anchor.v</spirit:name>
+        <spirit:name>../../ipshared/fbb1/hdl/data_anchor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -602,12 +606,6 @@
       </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
-      <spirit:name>C_M_AXIS_START_COUNT</spirit:name>
-      <spirit:displayName>C M AXIS START COUNT</spirit:displayName>
-      <spirit:description>Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXIS_START_COUNT" spirit:order="4" spirit:minimum="1" spirit:rangeType="long">32</spirit:value>
-    </spirit:parameter>
-    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">dma_data_anchor_0_0</spirit:value>
     </spirit:parameter>
@@ -626,11 +624,21 @@
       <spirit:displayName>Adc Max Count</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.ADC_MAX_COUNT">50</spirit:value>
     </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BASE_ADDR</spirit:name>
+      <spirit:displayName>Base Addr</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.BASE_ADDR" spirit:bitStringLength="32">0x00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BUFFER_SIZE</spirit:name>
+      <spirit:displayName>Buffer Size</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BUFFER_SIZE">1024</spirit:value>
+    </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>data_anchor_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:coreRevision>17</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -660,10 +668,10 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d978904c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="43cd2d10"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="697b4a94"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="de413e31"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e6c445a0"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d86f0a7a"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5d77a09c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6184f54c"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

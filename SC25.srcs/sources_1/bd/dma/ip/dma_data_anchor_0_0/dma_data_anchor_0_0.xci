@@ -4,23 +4,25 @@
     "xci_name": "dma_data_anchor_0_0",
     "cell_name": "data_anchor_0",
     "component_reference": "spicer.local:user:data_anchor:1.0",
-    "ip_revision": "15",
+    "ip_revision": "17",
     "gen_directory": "../../../../../../SC25.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0",
     "parameters": {
       "component_parameters": {
         "C_M_AXIS_TDATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_M_AXIS_START_COUNT": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "dma_data_anchor_0_0", "resolve_type": "user", "usage": "all" } ],
         "DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "TOTAL_SAMPLES": [ { "value": "1024", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "ADC_MAX_COUNT": [ { "value": "50", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ]
+        "ADC_MAX_COUNT": [ { "value": "50", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "BASE_ADDR": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "BUFFER_SIZE": [ { "value": "1024", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "C_M_AXIS_TDATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_M_AXIS_START_COUNT": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "TOTAL_SAMPLES": [ { "value": "1024", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "ADC_MAX_COUNT": [ { "value": "50", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "ADC_MAX_COUNT": [ { "value": "50", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "BASE_ADDR": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "BUFFER_SIZE": [ { "value": "1024", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -38,7 +40,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "15" } ],
+        "IPREVISION": [ { "value": "17" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../SC25.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
