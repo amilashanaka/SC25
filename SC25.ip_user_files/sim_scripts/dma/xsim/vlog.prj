@@ -1,0 +1,22 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../SC25.gen/sources_1/bd/dma/ipshared/ec67/hdl" --include "../../../../SC25.gen/sources_1/bd/dma/ipshared/d47c/hdl" --include "../../../../SC25.gen/sources_1/bd/dma/ipshared/434f/hdl" \
+"../../../bd/dma/ip/dma_processing_system7_0_0/sim/dma_processing_system7_0_0.v" \
+"../../../bd/dma/ip/dma_xbar_1/sim/dma_xbar_1.v" \
+"../../../bd/dma/ip/dma_xbar_0/sim/dma_xbar_0.v" \
+"../../../bd/dma/ip/dma_axis_data_fifo_0_0/sim/dma_axis_data_fifo_0_0.v" \
+"../../../../SC25.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/src/pmod_concat.v" \
+"../../../bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/sim/pmod_bridge_0.v" \
+"../../../../SC25.gen/sources_1/bd/dma/ipshared/17c8/src/ad1_spi.v" \
+"../../../../SC25.gen/sources_1/bd/dma/ipshared/17c8/hdl/PmodAD1_v1_0.v" \
+"../../../bd/dma/ip/dma_PmodAD1_0_1/sim/dma_PmodAD1_0_1.v" \
+"../../../bd/dma/ipshared/b6a8/hdl/data_anchor.v" \
+"../../../bd/dma/ip/dma_data_anchor_0_0/sim/dma_data_anchor_0_0.v" \
+"../../../bd/dma/ip/dma_auto_pc_0/sim/dma_auto_pc_0.v" \
+"../../../bd/dma/ip/dma_auto_us_0/sim/dma_auto_us_0.v" \
+"../../../bd/dma/ip/dma_auto_pc_1/sim/dma_auto_pc_1.v" \
+"../../../bd/dma/ip/dma_auto_pc_2/sim/dma_auto_pc_2.v" \
+"../../../bd/dma/sim/dma.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
