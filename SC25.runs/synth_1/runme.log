@@ -8,12 +8,12 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Wed Nov 27 09:52:14 2024
+  **** Start of session at: Wed Nov 27 10:54:30 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source dma_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 691.965 ; gain = 238.957
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 692.848 ; gain = 239.371
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/SC25/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -26,11 +26,13 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21648
+INFO: [Synth 8-7075] Helper process launched with PID 22560
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1585.035 ; gain = 446.234
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1587.695 ; gain = 447.008
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'dma_wrapper' [C:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/hdl/dma_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'dma' [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/synth/dma.v:13]
@@ -889,18 +891,18 @@ WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_33_axi_c
 WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_33_axi_crossbar__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2016.723 ; gain = 877.922
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.832 ; gain = 878.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2016.723 ; gain = 877.922
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.832 ; gain = 878.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2016.723 ; gain = 877.922
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.832 ; gain = 878.145
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 2016.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.378 . Memory (MB): peak = 2018.832 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -948,33 +950,35 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/dma_wrapper_
 INFO: [Project 1-1714] 11 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2106.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2097.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 33 instances were transformed.
   FDR => FDRE: 24 instances
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 2106.367 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2097.414 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/processing_system7_0/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 55).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/rst_ps7_0_50M/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 60).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_mem_intercon/s01_couplers/auto_us/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 66).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_dma/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 75).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst/PmodAD1_pmod_bridge/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 81).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 86).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/rst_ps7_0_50M/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 58).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_dma/U0. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 64).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst/PmodAD1_pmod_bridge/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 70).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 75).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_mem_intercon/s01_couplers/auto_us/inst. (constraint file  C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dont_touch.xdc, line 80).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
@@ -1011,20 +1015,7 @@ WARNING: set_property KEEP could not find object (constraint file  auto generate
 WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
 WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 2106.367 ; gain = 967.566
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-got a mismatch dma_data_anchor_0_0
-Is not a child genome
-got a mismatch data_anchor
-Is not a child genome
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 2106.367 ; gain = 967.566
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad1_spi'
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
@@ -1227,18 +1218,8 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_32_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : Port sizes have changed
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1423,7 +1404,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:40 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:38 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1462,7 +1443,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:44 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:42 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1470,7 +1451,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:47 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1506,7 +1487,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance dma_i/data_anchor_0/inst/buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:49 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1627,37 +1608,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Projects/ERN24004/Projects/SC25/SC25.gen/sources_1/bd/dma/ipshared/8142/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6605]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:51 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:49 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:51 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:49 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1723,18 +1704,18 @@ Report Cell Usage:
 |25    |IOBUF    |     8|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.414 ; gain = 956.727
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5125 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:47 . Memory (MB): peak = 2106.367 ; gain = 877.922
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2106.367 ; gain = 967.566
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:45 . Memory (MB): peak = 2097.414 ; gain = 878.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2097.414 ; gain = 956.727
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 2106.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 2097.414 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2106.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2097.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 27 instances were transformed.
   FDR => FDRE: 12 instances
@@ -1744,11 +1725,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete | Checksum: 1d0bcaa4
 INFO: [Common 17-83] Releasing license: Synthesis
-554 Infos, 425 Warnings, 2 Critical Warnings and 0 Errors encountered.
+557 Infos, 425 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:57 . Memory (MB): peak = 2106.367 ; gain = 1361.391
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:58 . Memory (MB): peak = 2097.414 ; gain = 1353.625
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2106.367 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2097.414 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dma_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_wrapper_utilization_synth.rpt -pb dma_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 09:53:32 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 10:55:51 2024...

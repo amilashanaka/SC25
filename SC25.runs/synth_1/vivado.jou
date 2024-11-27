@@ -3,8 +3,8 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Wed Nov 27 09:52:14 2024
-# Process ID: 23500
+# Start of session at: Wed Nov 27 10:54:30 2024
+# Process ID: 15140
 # Current directory: C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1
 # Command line: vivado.exe -log dma_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_wrapper.tcl
 # Log file: C:/Projects/ERN24004/Projects/SC25/SC25.runs/synth_1/dma_wrapper.vds
@@ -19,6 +19,6 @@
 # Host memory       :34124 MB
 # Swap memory       :2147 MB
 # Total Virtual     :36272 MB
-# Available Virtual :18192 MB
+# Available Virtual :18086 MB
 #-----------------------------------------------------------
 source dma_wrapper.tcl -notrace

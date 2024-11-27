@@ -154,7 +154,7 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../SC25.gen/sources_1/
 "../../../../SC25.gen/sources_1/bd/dma/ipshared/17c8/src/ad1_spi.v" \
 "../../../../SC25.gen/sources_1/bd/dma/ipshared/17c8/hdl/PmodAD1_v1_0.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_1/sim/dma_PmodAD1_0_1.v" \
-"../../../bd/dma/ipshared/b6a8/hdl/data_anchor.v" \
+"../../../bd/dma/ipshared/fbb1/hdl/data_anchor.v" \
 "../../../bd/dma/ip/dma_data_anchor_0_0/sim/dma_data_anchor_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../SC25.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../SC25.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../SC25.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \

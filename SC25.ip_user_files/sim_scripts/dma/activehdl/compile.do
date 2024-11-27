@@ -157,7 +157,7 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../SC25.gen/sources_1/bd/dma/
 "../../../../SC25.gen/sources_1/bd/dma/ipshared/17c8/src/ad1_spi.v" \
 "../../../../SC25.gen/sources_1/bd/dma/ipshared/17c8/hdl/PmodAD1_v1_0.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_1/sim/dma_PmodAD1_0_1.v" \
-"../../../bd/dma/ipshared/b6a8/hdl/data_anchor.v" \
+"../../../bd/dma/ipshared/fbb1/hdl/data_anchor.v" \
 "../../../bd/dma/ip/dma_data_anchor_0_0/sim/dma_data_anchor_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_32  -v2k5 "+incdir+../../../../SC25.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../SC25.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../SC25.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_18 -l processing_system7_vip_v1_0_20 -l xil_defaultlib -l generic_baseblocks_v2_1_2 -l axi_register_slice_v2_1_32 -l fifo_generator_v13_2_10 -l axi_data_fifo_v2_1_31 -l axi_crossbar_v2_1_33 -l lib_cdc_v1_0_3 -l proc_sys_reset_v5_0_15 -l lib_pkg_v1_0_4 -l lib_fifo_v1_0_19 -l lib_srl_fifo_v1_0_4 -l axi_datamover_v5_1_34 -l axi_sg_v4_1_18 -l axi_dma_v7_1_33 -l axis_infrastructure_v1_1_1 -l axis_data_fifo_v2_0_14 -l axi_protocol_converter_v2_1_32 -l axi_clock_converter_v2_1_31 -l blk_mem_gen_v8_4_8 -l axi_dwidth_converter_v2_1_32 \
