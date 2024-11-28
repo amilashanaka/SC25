@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicer.local:user:data_anchor:1.0
-// IP Revision: 17
+// IP Revision: 23
 
 `timescale 1ns/1ps
 
@@ -90,8 +90,7 @@ input wire chan1_rdy;
     .DATA_WIDTH(32),
     .TOTAL_SAMPLES(1024),
     .ADC_MAX_COUNT(50),
-    .BASE_ADDR(32'H00000000),
-    .BUFFER_SIZE(1024)
+    .C_M_AXIS_START_COUNT(32)
   ) inst (
     .m_axis_aclk(m_axis_aclk),
     .m_axis_aresetn(m_axis_aresetn),

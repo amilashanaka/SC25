@@ -33,8 +33,8 @@ preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 990 70n
 levelinfo -pg 1 0 200 530 840 1190 1540 1940 2210
 pagesize -pg 1 -db -bbox -sgen 0 0 2330 970
 ",
-   "Color Coded_ScaleFactor":"0.528726",
-   "Color Coded_TopLeft":"8,-87",
+   "Color Coded_ScaleFactor":"0.858918",
+   "Color Coded_TopLeft":"8,405",
    "Default View_ScaleFactor":"0.572583",
    "Default View_TopLeft":"10,-381",
    "ExpandedHierarchyInLayout":"",
